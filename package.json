@@ -1,0 +1,18 @@
+{
+  "name": "pec1",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "Alejandro Pardos <alexpardos11@gmail.com>",
+  "license": "ISC",
+  "type": "commonjs",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "latest"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
