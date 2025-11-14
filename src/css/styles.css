@@ -133,6 +133,23 @@ a {
   align-items: center;
 }
 
+.infoBtn {
+  background-color: #7f9c96;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.infoBox{
+  display:none; 
+  padding:20px; 
+  background:#eef5f3; 
+  border-radius:8px; 
+  margin-bottom:20px;
+  margin-top: 10px;
+}
+
 /* ----- MEDIA QUERIES RESPONSIVE ----- */
 
 @media (max-width: 1024px) {
