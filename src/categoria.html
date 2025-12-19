@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Categorías - Viaja por el Mundo</title>
+  <link rel="icon" href="img/tierra.png" type="image/x-icon">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -14,27 +15,37 @@
   </nav>
   <section>
     <h2>Tipos de viajes</h2>
-       <button id="infoBtn" class = "infoBtn">Mostrar información</button>
-
-       <div id="infoBox" class="infoBox">
-         <p>
-           Aquí puedes ver las principales categorías de viajes: playa, montaña y ciudad. 
-           Haz clic en cada una para descubrir experiencias únicas adaptadas a tus gustos.
-         </p>
-       </div>
+    <button id="infoBtn" class="infoBtn" aria-expanded="false" aria-controls="infoBox"> Mostrar información </button>
+    
+    <div id="infoBox" class="infoBox" hidden>
+      <p>
+        Aquí puedes ver las principales categorías de viajes: 
+        <span>🏖️ Playa</span>, <span>⛰️ Montaña</span> y <span>🏙️ Ciudad</span>. 
+        Haz clic en cada una para descubrir experiencias únicas adaptadas a tus gustos.
+      </p>
+    </div>
     <div class="grid">
-      <a class="card" href="det2.html">
-        <img src="img/playa_2.jpg" alt="Playa">
+      <a class="card" id="card-playa" href="det2.html">
+        <picture>
+          <source media="(max-width: 600px)" srcset="img/optimizadas/playa_2-400.webp">
+          <source media="(601px <= width <= 1000px)" srcset="img/optimizadas/playa_2-800.webp">
+          <source media="(min-width: 1001px)" srcset="img/optimizadas/playa_2-1200.webp">
+          <img src="img/optimizadas/playa_2-800.webp" alt="Playa">
+        </picture>        
         <div class="body"><h3>Playa</h3><p>Sol, mar y relax en las mejores costas.</p></div>
       </a>
 
-      <a class="card">
-        <img src="img/montana_2.jpg" alt="Montaña">
+      <a class="card" id="card-montana">
+        <img src="img/optimizadas/montana_2-800.webp" srcset="
+        img/optimizadas/montana_2-400.webp 400w,
+        img/optimizadas/montana_2-800.webp 800w,
+        img/optimizadas/montana_2-1200.webp 1200w" sizes="(max-width: 768px) 90vw, 480px" alt="Montaña">
         <div class="body"><h3>Montaña</h3><p>Rutas, miradores y aventura.</p></div>
       </a>
-
-      <a class="card" href="det1.html">
-        <img src="img/ciudad_2.jpg" alt="Ciudad">
+      <a class="card" id="card-ciudad" href="det1.html">
+        <img src="img/original/ciudad-1x.jpg" srcset="img/ciudad-1x.jpg 1x, 
+                  img/original/ciudad-2x.jpg 2x, 
+                  img/original/ciudad-3x.jpg 3x" alt="Ciudad">
         <div class="body"><h3>Ciudad</h3><p>Arte, cultura y gastronomía.</p></div>
       </a>
     </div>

@@ -44,6 +44,7 @@ section {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+
 footer {
   background-color: #8fad88;
   color: white;
@@ -70,10 +71,19 @@ a {
   gap: 30px;
   margin-top: 30px;
   align-items: center;
-}
+} 
 
 .adventure .text {
   flex: 1;
+  animation: slideInLeft 1s ease forwards;
+}
+
+.adventure img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  display: block;
+  animation: slideInRight 1s ease forwards;
 }
 
 .adventure h1 {
@@ -89,6 +99,38 @@ a {
   max-width: 540px;
 }
 
+.clip-image img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 50%; /* también asegura que sea circular */
+  box-shadow: 0 10px 30px rgba(3,37,65,0.08);
+  clip-path: circle(50% at 50% 50%); /* círculo centrado */
+}
+
+.animated-svg {
+  display: block;
+  margin: 2rem auto;
+}
+
+.animated-svg circle {
+  stroke: #ff6f61;
+  stroke-width: 4;
+  fill: none;
+  stroke-dasharray: 251.2; /* perímetro del círculo */
+  stroke-dashoffset: 251.2;
+  animation: draw 3s infinite linear;
+}
+
+.compass-container {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.compass {
+  animation: spin 3s linear infinite;
+}
+
 /* GRID DE TARJETAS */
 .grid {
   display: grid;
@@ -102,7 +144,12 @@ a {
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(12, 37, 70, 0.06);
   overflow: hidden;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
@@ -110,6 +157,11 @@ a {
   width: 100%;
   height: 190px;
   object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
 }
 
 .card .body {
@@ -133,6 +185,8 @@ a {
   align-items: center;
 }
 
+
+
 .infoBtn {
   background-color: #7f9c96;
   color: white;
@@ -150,11 +204,84 @@ a {
   margin-top: 10px;
 }
 
+#card-playa {
+  animation: slideInTop 1s ease forwards;
+}
+
+#card-montana {
+  animation: slideInBottom 1s ease forwards;
+}
+
+#card-ciudad {
+  animation: slideInTop 1s ease forwards;
+}
+
+/* ----- ANIMACIONES ----- */
+
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+@keyframes draw {
+  0% { stroke-dashoffset: 251.2; }
+  50% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: 251.2; }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ----- MEDIA QUERIES RESPONSIVE ----- */
 
 @media (max-width: 1024px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .adventure {
+    flex-direction: row;
+    text-align: center;
   }
 }
 
@@ -191,6 +318,12 @@ a {
   .grid {
     grid-template-columns: 1fr;
   }
+
+  .video iframe {
+    width: 100%;
+    height: 100%;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -204,5 +337,10 @@ a {
 
   .card p {
     font-size: 13px;
+  }
+
+  .video iframe {
+    width: 200px;
+    height: 150px;
   }
 }

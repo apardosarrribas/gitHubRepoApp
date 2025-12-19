@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Playas</title>
+  <link rel="icon" href="img/tierra.png" type="image/x-icon">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <header>
-    <h1>Playas</h1>
+    <h1>🏖️ Playas</h1>
   </header>
   <nav>
     <a href="index.html">Inicio</a>
@@ -18,33 +19,46 @@
     <a href="links.html">Enlaces</a>
   </nav>
   <section>
-    <img src="img/playa_billboard.jpg" alt="Playa" style="height:300px; width: 100%;">
+    <picture>
+      <source media="(max-width: 600px)" srcset="img/optimizadas/playa_billboard-400.webp">
+      <source media="(601px <= width <= 1000px)" srcset="img/optimizadas/playa_billboard-800.webp">
+      <source media="(min-width: 1001px)" srcset="img/optimizadas/playa_billboard-1200.webp">
+      <img src="img/optimizadas/playa_billboard-800.webp" alt="Playa" style="width: 100%;">
+    </picture>
     <section>
       <section class="adventure">
-        <div class="text">
+          <div class="text">
           <h2>Maldivas (Oceano Índico)</h2>
           <p>Un archipiélago formado por más de 1,000 islas coralinas, famosas por sus aguas turquesas y bungalows sobre
             el mar.</p>
           <p> Es el destino ideal para quienes buscan lujo, privacidad y buceo entre arrecifes de coral llenos de
             vida marina.</p>
         </div>
-        <div style="width:480px;">
-          <img src="img/maldivas.jpg" alt="Maldivas"
-            style="width:100%; border-radius:12px; box-shadow:0 10px 30px rgba(3,37,65,0.08); height: 300px;">
+        <div>
+          <picture>
+            <source media="(max-width: 600px)" srcset="img/optimizadas/maldivas-400.webp">
+            <source media="(601px <= width <= 1000px)" srcset="img/optimizadas/maldivas-800.webp">
+            <source media="(min-width: 1001px)" srcset="img/optimizadas/maldivas-1200.webp">
+            <img src="img/optimizadas/maldivas-800.webp" alt="Playa">
+          </picture>
         </div>
       </section>
-      <section class="adventure">
+      <div class="adventure">
         <div class="text">
           <h2>Bora Bora (Polinesia Francesa)</h2>
           <p>Conocida como la “Perla del Pacífico”, esta isla está rodeada por una laguna protegida por un arrecife
             coralino y dominada por el monte Otemanu. Sus playas de arena blanca y aguas color esmeralda son
             consideradas de las más bellas del mundo.</p>
         </div>
-        <div style="width:480px;">
-          <img src="img/bora_bora.jpg" alt="Bora Bora (Polineasia Francesa)"
-            style="width:100%; border-radius:12px; box-shadow:0 10px 30px rgba(3,37,65,0.08); height: 300px;">
+        <div>
+          <picture>
+            <source media="(max-width: 600px)" srcset="img/optimizadas/bora_bora-400.webp">
+            <source media="(601px <= width <= 1000px)" srcset="img/optimizadas/bora_bora-800.webp">
+            <source media="(min-width: 1001px)" srcset="img/optimizadas/bora_bora-1200.webp">
+            <img src="src/img/optimizadas/bora_bora-800.webp" alt="Bora Bora (Polineasia Francesa)">
+          </picture>
         </div>
-      </section>
+      </div>
       <section class="adventure">
         <div class="text">
           <h2>Islas Phi Phi (Tailandia)</h2>
@@ -52,10 +66,14 @@
             las Phi Phi ofrecen una mezcla perfecta de aventura, paisajes espectaculares y ambiente tropical relajado.
           </p>
         </div>
-        <div style="width:480px;">
-          <img src="img/phi.jpg" alt="Phi Phi (Tailandia)"
-            style="width:100%; border-radius:12px; box-shadow:0 10px 30px rgba(3,37,65,0.08); height: 300px;">
-        </div>
+        <div>
+          <picture>
+            <source media="(max-width: 600px)" srcset="img/optimizadas/phi-400.webp">
+            <source media="(601px <= width <= 1000px)" srcset="img/optimizadas/phi-800.webp">
+            <source media="(min-width: 1001px)" srcset="img/optimizadas/phi-1200.webp">
+            <img src="img/optimizadas/phi-800.webp" alt="Phi Phi (Tailandia)">
+          </picture>
+          </div>
       </section>
       </div>
       <div class="video">

@@ -4,11 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Viaja por el Mundo</title>
+  <link rel="icon" href="img/tierra.png" type="image/x-icon">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header>
-    <h1>Viaja por el Mundo</h1>
+    <h1>
+      <span class="compass-container">
+        <svg class="compass" viewBox="0 0 64 64" width="50" height="50" aria-hidden="true">
+          <circle cx="32" cy="32" r="30" fill="#4D7c8a" stroke="#012a4a" stroke-width="2"/>
+          <path d="M32 2 L32 62 M2 32 L62 32" stroke="#fff" stroke-width="2"/>
+          <polygon points="32,10 36,32 32,30 28,32" fill="#fff"/>
+        </svg>
+      </span>
+      Viaja por el Mundo
+    </h1>
     <p>Descubre destinos inolvidables</p>
   </header>
   <nav>
@@ -22,9 +32,13 @@
       <h1>Descubre destinos que te cambiarán</h1>
           <p>Guías visuales, recomendaciones y rutas seleccionadas para que prepares tu próxima aventura.</p>
     </div>
-    <div style="width:480px;">
-      <img src="img/aventura.jpg" alt="Paraje de aventura" style="width:100%; border-radius:12px; box-shadow:0 10px 30px rgba(3,37,65,0.08);">
-    </div>
+    <div class="clip-image">
+      <picture>
+        <source media="(max-width: 649px)" srcset="img/optimizadas/aventura-400.webp">
+        <source media="(min-width: 650px)" srcset="img/optimizadas/aventura-800.webp">
+        <img src="img/optimizadas/aventura-800.webp" alt="Paraje de aventura">
+      </picture>
+    </div>    
   </div>
     <p>Viajar es mucho más que desplazarse: es descubrir, aprender y conectar con lo desconocido.</p>
     <p>Aquí te ayudamos a planificar experiencias auténticas en cada rincón del planeta.</p>

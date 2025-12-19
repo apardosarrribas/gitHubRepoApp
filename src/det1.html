@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ciudades</title>
+  <link rel="icon" href="img/tierra.png" type="image/x-icon">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <header>
-    <h1>Ciudades</h1>
+    <h1>🗼 Ciudades</h1>
   </header>
   <nav>
     <a href="index.html">Inicio</a>
@@ -18,12 +19,22 @@
     <a href="links.html">Enlaces</a>
   </nav>
   <section>
-    <img src="img/ciudad_billboard.jpg" alt="Ciudad" style="height:300px; width: 100%;">
+    <picture>
+      <source media="(max-width: 600px)" srcset="img/optimizadas/ciudad_billboard-400.webp">
+      <source media="(601px <= width <= 1000px)" srcset="img/optimizadas/ciudad_billboard-800.webp">
+      <source media="(min-width: 1001px)" srcset="img/optimizadas/ciudad_billboard-1200.webp">
+      <img src="img/optimizadas/ciudad_billboard-800.webp" alt="Ciudad" style="width: 100%; ">
+    </picture>
     <section>
       <h2>Ciudades más recomendadas</h2>
       <div class="grid">
         <a class="card">
-          <img src="img/tokio.jpg" alt="Tokio">
+          <picture>
+            <source media="(max-width: 600px)" srcset="img/optimizadas/tokio-400.webp">
+            <source media="(601px <= width <= 1000px)" srcset="img/optimizadas/tokio-800.webp">
+            <source media="(min-width: 1001px)" srcset="img/optimizadas/tokio-1200.webp">
+            <img src="img/optimizadas/tokio-800.webp" alt="Tokio">
+          </picture>
           <div class="body">
             <h3>Tokio, Japón</h3>
             <p>Una metrópolis que combina la tradición milenaria con la innovación más avanzada.
@@ -34,7 +45,12 @@
         </a>
 
         <a class="card">
-          <img src="img/roma.jpg" alt="Roma">
+          <picture>
+            <source media="(max-width: 600px)" srcset="img/optimizadas/roma-400.webp">
+            <source media="(601px <= width <= 1000px)" srcset="img/optimizadas/roma-800.webp">
+            <source media="(min-width: 1001px)" srcset="img/optimizadas/roma-1200.webp">
+            <img src="img/optimizadas/roma-800.webp" alt="Roma">
+          </picture>
           <div class="body">
             <h3>Roma, Italia</h3>
             <p>La Ciudad Eterna es un museo al aire libre donde el pasado y el presente conviven en perfecta armonía.
@@ -46,7 +62,12 @@
         </a>
 
         <a class="card">
-          <img src="img/san_francisco.jpg" alt="San Francisco">
+          <picture>
+            <source media="(max-width: 600px)" srcset="img/optimizadas/san_francisco-400.webp">
+            <source media="(601px <= width <= 1000px)" srcset="img/optimizadas/san_francisco-800.webp">
+            <source media="(min-width: 1001px)" srcset="img/optimizadas/san_francisco-1200.webp">
+            <img src="img/optimizadas/san_francisco-800.webp" alt="San Francisco">
+          </picture>
           <div class="body">
             <h3>San Francisco, Estados Unidos</h3>
             <p>Famosa por su icónico Golden Gate y sus colinas empinadas, San Francisco es una ciudad diversa, creativa
