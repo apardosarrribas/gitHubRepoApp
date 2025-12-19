@@ -16,7 +16,7 @@
     "parcel": "latest"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
-  "main": "index.js",
+  "main": "index.html",
   "dependencies": {
     "ansi-styles": "^4.3.0",
     "base-x": "^3.0.11",
