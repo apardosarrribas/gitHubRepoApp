@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Playas</title>
+  <meta name="description"
+    content="Descubre los mejores destinos de playa con Viaja por el Mundo, con recomendaciones, consejos y lugares ideales para relajarte junto al mar.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
@@ -13,9 +15,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
   </noscript>
   <link rel="preload" href="css/styles.css" as="style" onload="this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="css/styles.css">
-  </noscript>
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="img/tierra.png" type="image/x-icon">
 </head>
 
@@ -28,72 +28,77 @@
     <a href="categoria.html">Categorías</a>
     <a href="links.html">Enlaces</a>
   </nav>
-  <section>
-    <picture>
-      <source media="(max-width: 600px)" srcset="img/optimizadas/playa_billboard-400.webp">
-      <source media="(601px <= width <= 1000px)" srcset="img/optimizadas/playa_billboard-800.webp">
-      <source media="(min-width: 1001px)" srcset="img/optimizadas/playa_billboard-1200.webp">
-      <img src="img/optimizadas/playa_billboard-800.webp" alt="Playa" fetchpriority="high" style="width: 100%;">
-    </picture>
+  <main>
     <section>
-      <section class="adventure">
+      <picture>
+        <source media="(max-width: 600px)" srcset="img/optimizadas/playa_billboard-400.webp">
+        <source media="(min-width: 601px) and (max-width: 1000px)" srcset="img/optimizadas/playa_billboard-800.webp">
+        <source media="(min-width: 1001px)" srcset="img/optimizadas/playa_billboard-1200.webp">
+        <img src="img/optimizadas/playa_billboard-800.webp" alt="Playa" fetchpriority="high" width="1200" height="600"
+          style="width: 100%; height: auto;">
+      </picture>
+      <section>
+        <section class="adventure">
           <div class="text">
-          <h2>Maldivas (Oceano Índico)</h2>
-          <p>Un archipiélago formado por más de 1,000 islas coralinas, famosas por sus aguas turquesas y bungalows sobre
-            el mar.</p>
-          <p> Es el destino ideal para quienes buscan lujo, privacidad y buceo entre arrecifes de coral llenos de
-            vida marina.</p>
-        </div>
-        <div>
-          <picture>
-            <source media="(max-width: 600px)" srcset="img/optimizadas/maldivas-400.webp">
-            <source media="(601px <= width <= 1000px)" srcset="img/optimizadas/maldivas-800.webp">
-            <source media="(min-width: 1001px)" srcset="img/optimizadas/maldivas-1200.webp">
-            <img src="img/optimizadas/maldivas-800.webp" loading="lazy" alt="Playa">
-          </picture>
-        </div>
-      </section>
-      <div class="adventure">
-        <div class="text">
-          <h2>Bora Bora (Polinesia Francesa)</h2>
-          <p>Conocida como la “Perla del Pacífico”, esta isla está rodeada por una laguna protegida por un arrecife
-            coralino y dominada por el monte Otemanu. Sus playas de arena blanca y aguas color esmeralda son
-            consideradas de las más bellas del mundo.</p>
-        </div>
-        <div>
-          <picture>
-            <source media="(max-width: 600px)" srcset="img/optimizadas/bora_bora-400.webp">
-            <source media="(601px <= width <= 1000px)" srcset="img/optimizadas/bora_bora-800.webp">
-            <source media="(min-width: 1001px)" srcset="img/optimizadas/bora_bora-1200.webp">
-            <img src="img/optimizadas/bora_bora-800.webp" loading="lazy" alt="Bora Bora (Polineasia Francesa)">
-          </picture>
-        </div>
-      </div>
-      <section class="adventure">
-        <div class="text">
-          <h2>Islas Phi Phi (Tailandia)</h2>
-          <p>Famosas por sus imponentes acantilados de piedra caliza y sus playas escondidas (como la célebre Maya Bay),
-            las Phi Phi ofrecen una mezcla perfecta de aventura, paisajes espectaculares y ambiente tropical relajado.
-          </p>
-        </div>
-        <div>
-          <picture>
-            <source media="(max-width: 600px)" srcset="img/optimizadas/phi-400.webp">
-            <source media="(601px <= width <= 1000px)" srcset="img/optimizadas/phi-800.webp">
-            <source media="(min-width: 1001px)" srcset="img/optimizadas/phi-1200.webp">
-            <img src="img/optimizadas/phi-800.webp" loading="lazy" alt="Phi Phi (Tailandia)">
-          </picture>
+            <h2>Maldivas (Oceano Índico)</h2>
+            <p>Un archipiélago formado por más de 1,000 islas coralinas, famosas por sus aguas turquesas y bungalows
+              sobre
+              el mar.</p>
+            <p> Es el destino ideal para quienes buscan lujo, privacidad y buceo entre arrecifes de coral llenos de
+              vida marina.</p>
           </div>
+          <div>
+            <picture>
+              <source media="(max-width: 600px)" srcset="img/optimizadas/maldivas-400.webp">
+              <source media="(min-width: 601px) and (max-width: 1000px)" srcset="img/optimizadas/maldivas-800.webp">
+              <source media="(min-width: 1001px)" srcset="img/optimizadas/maldivas-1200.webp">
+              <img src="img/optimizadas/maldivas-800.webp" loading="lazy" alt="Playa">
+            </picture>
+          </div>
+        </section>
+        <div class="adventure">
+          <div class="text">
+            <h2>Bora Bora (Polinesia Francesa)</h2>
+            <p>Conocida como la “Perla del Pacífico”, esta isla está rodeada por una laguna protegida por un arrecife
+              coralino y dominada por el monte Otemanu. Sus playas de arena blanca y aguas color esmeralda son
+              consideradas de las más bellas del mundo.</p>
+          </div>
+          <div>
+            <picture>
+              <source media="(max-width: 600px)" srcset="img/optimizadas/bora_bora-400.webp">
+              <source media="(min-width: 601px) and (max-width: 1000px)" srcset="img/optimizadas/bora_bora-800.webp">
+              <source media="(min-width: 1001px)" srcset="img/optimizadas/bora_bora-1200.webp">
+              <img src="img/optimizadas/bora_bora-800.webp" loading="lazy" alt="Bora Bora (Polineasia Francesa)">
+            </picture>
+          </div>
+        </div>
+        <section class="adventure">
+          <div class="text">
+            <h2>Islas Phi Phi (Tailandia)</h2>
+            <p>Famosas por sus imponentes acantilados de piedra caliza y sus playas escondidas (como la célebre Maya
+              Bay),
+              las Phi Phi ofrecen una mezcla perfecta de aventura, paisajes espectaculares y ambiente tropical relajado.
+            </p>
+          </div>
+          <div>
+            <picture>
+              <source media="(max-width: 600px)" srcset="img/optimizadas/phi-400.webp">
+              <source media="(min-width: 601px) and (max-width: 1000px)" srcset="img/optimizadas/phi-800.webp">
+              <source media="(min-width: 1001px)" srcset="img/optimizadas/phi-1200.webp">
+              <img src="img/optimizadas/phi-800.webp" loading="lazy" alt="Phi Phi (Tailandia)">
+            </picture>
+          </div>
+        </section>
+        </div>
+        <div class="video">
+          <figure><iframe width="560" height="315" src="https://www.youtube.com/embed/aCXa4Iwxigo?si=buYiPwcn5bpv_2mX"
+              loading="lazy" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></figure>
+        </div>
       </section>
-      </div>
-      <div class="video">
-        <figure><iframe width="560" height="315" src="https://www.youtube.com/embed/aCXa4Iwxigo?si=buYiPwcn5bpv_2mX"
-            loading="lazy" title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></figure>
-      </div>
     </section>
-  </section>
+  </main>
   <footer>
     <p>Alejandro Pardos Arribas | UOC | Herramientas HTML y CSS</p>
   </footer>
