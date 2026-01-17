@@ -323,6 +323,15 @@ a {
     height: 100%;
   }
 
+  .adventure .text,
+  .adventure img,
+  .card,
+  #card-playa,
+  #card-montana,
+  #card-ciudad {
+    animation: none !important;
+  }
+
 }
 
 @media (max-width: 480px) {
